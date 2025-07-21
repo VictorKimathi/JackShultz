@@ -89,12 +89,12 @@ const Footer = () => {
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">Hubertus, WI, USA</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <Linkedin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <a href="#" className="text-gray-300 hover:text-[#FF6900]">
                   LinkedIn
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
