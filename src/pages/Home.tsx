@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </section>
       {/* Professional Summary Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white" id="home">
         <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>

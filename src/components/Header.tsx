@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/about" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <h1 className="text-xl md:text-2xl font-bold text-gray-900">
               Jack Shultz
             </h1>
