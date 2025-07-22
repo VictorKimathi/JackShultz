@@ -11,13 +11,13 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/about" className="flex items-center">
             <h1 className="text-xl md:text-2xl font-bold text-gray-900">
               Jack Shultz
             </h1>
-            <span className="hidden md:block text-sm text-gray-600 ml-2">
+            {/* <span className="hidden md:block text-sm text-gray-600 ml-2">
               Travel Copywriter
-            </span>
+            </span> */}
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
