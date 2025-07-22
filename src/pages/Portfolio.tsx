@@ -26,77 +26,26 @@ const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   // Sample projects data
   const projects = [{
-    id: 'wanderwise-hidden-gems',
-    title: 'U.S. Hidden Gems: Beyond the Tourist Trail',
-    category: 'longform',
+    title: 'Hidden Micro‑Islands You Can Only Reach by Kayak or Dinghy',
+    category: 'Remote Island Escapes',
     categoryDisplay: 'Longform Feature',
-    client: 'Wanderwise Magazine',
     image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: "An in-depth exploration of America's lesser-known destinations."
+    description: "Some of the world’s most enchanting islands don’t have airports, ferries, or cruise ports. They sit quietly off the map, tucked behind reefs, nestled in mangroves, or scattered across remote coastlines, accessible only by kayak, dinghy, or small boat.",
+    href: 'Hidden_Micro_Islands.pdf'
   }, {
-    id: 'globepath-island-hopping',
     title: "Island Hopping: Caribbean's Best Kept Secrets",
-    category: 'destination',
+    category: 'Raw Nature Experiences',
     categoryDisplay: 'Destination Guide',
-    client: 'GlobePath Digital Media',
     image: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: 'A comprehensive guide to the hidden treasures of Caribbean islands.'
+    description: 'Sleeping in an overwater tent on a remote island offers a unique kind of escape that blends adventure and simplicity. Unlike luxury overwater bungalows or well-equipped campsites, these tents provide a raw experience of nature where the barrier between you and the environment is minimal. The rhythm of the ocean, the absence of urban noise, and the exposure to the elements all come together to create a setting that is both calming and unpredictable.',
+    href: 'What_It’s_Really_Like.pdf'
   }, {
-    id: 'midwest-road-trips',
-    title: 'Midwest Road Trips: Routes Less Traveled',
-    category: 'brand',
-    categoryDisplay: 'Brand Content',
-    client: 'Midwest Journeys Quarterly',
-    image: 'https://images.unsplash.com/photo-1533567555600-7cf53e131d22?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: "Branded content showcasing unique road trip itineraries through America's heartland."
-  }, {
-    id: 'wanderwise-national-parks',
-    title: "National Parks: America's Greatest Treasures",
-    category: 'longform',
+    title: "Floating Markets and Water-Based Villages Worth Exploring by Canoe",
+    category: 'Cultural Water Destinations',
     categoryDisplay: 'Longform Feature',
-    client: 'Wanderwise Magazine',
     image: 'https://images.unsplash.com/photo-1576176539998-0237d1ac6a85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: "A deep dive into the history and beauty of America's national parks."
-  }, {
-    id: 'globepath-europe-train',
-    title: 'Europe by Train: The Ultimate Itinerary',
-    category: 'destination',
-    categoryDisplay: 'Destination Guide',
-    client: 'GlobePath Digital Media',
-    image: 'https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: 'A comprehensive guide to exploring Europe via its extensive rail network.'
-  }, {
-    id: 'travel-monthly-newsletter',
-    title: 'Summer Escapes: Monthly Newsletter Series',
-    category: 'email',
-    categoryDisplay: 'Email Campaign',
-    client: 'Travel Monthly',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: 'A series of email newsletters highlighting summer travel destinations.'
-  }, {
-    id: 'midwest-fall-foliage',
-    title: "Fall Foliage: New England's Colorful Season",
-    category: 'print',
-    categoryDisplay: 'Print Brochure',
-    client: 'Midwest Journeys Quarterly',
-    image: 'https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: 'A print brochure showcasing the best spots for viewing fall colors.'
-  }, {
-    id: 'local-explorer-midwest',
-    title: 'Hidden Midwest: Small Town Treasures',
-    category: 'regional',
-    categoryDisplay: 'Regional Column',
-    client: 'Local Explorer Magazine',
-    image: 'https://images.unsplash.com/photo-1531761535398-849473552e77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: 'A regular column exploring charming small towns across the Midwest.'
-  }, {
-    id: 'adventure-seekers-guide',
-    title: 'Adventure Seekers: Thrill-Seeking Destinations',
-    category: 'brand',
-    categoryDisplay: 'Brand Content',
-    client: 'Adventure Seekers Co.',
-    image: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    description: "Branded content highlighting the world's top adventure destinations."
+    description: "Some of the world’s most fascinating communities exist not on land, but above rivers, lakes, and canals. In these places, boats replace sidewalks, and life moves to the rhythm of water. For travelers, exploring them by canoe offers a rare chance to move through working markets, floating homes, and stilt villages without barriers.",
+    href: 'Floating_Markets_and_Water.pdf'
   }];
   const filteredProjects = activeCategory === 'all' ? projects : projects.filter(project => project.category === activeCategory);
   return <div className="w-full">
