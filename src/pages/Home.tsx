@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRightIcon, SearchIcon, PenToolIcon, LayersIcon, TargetIcon } from 'lucide-react';
 import Button from '../components/Button';
 import ProjectCard from '../components/ProjectCard';
+import Testimonials from './Testimonials';
 const Home = () => {
   // Sample featured projects
   const featuredProjects = [{
@@ -169,6 +170,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
       {/* Call to Action Section */}
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-4 md:px-6 max-w-7xl text-center">
