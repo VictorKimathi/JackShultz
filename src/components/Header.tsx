@@ -19,8 +19,14 @@ const Header = () => {
               Travel Copywriter
             </span> */}
           </Link>
+          
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+          <NavLink to="/" className={({
+            isActive
+          }) => isActive ? 'text-[#FF6900] font-medium' : 'text-gray-700 hover:text-[#FF6900]'}>
+              Home
+            </NavLink>
             <NavLink to="/portfolio" className={({
             isActive
           }) => isActive ? 'text-[#FF6900] font-medium' : 'text-gray-700 hover:text-[#FF6900]'}>
